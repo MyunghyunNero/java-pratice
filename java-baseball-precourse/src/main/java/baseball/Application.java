@@ -1,7 +1,11 @@
 package baseball;
 
+import java.util.Scanner;
+
 public class Application {
     public static void main(String[] args) {
-        //TODO: 숫자 야구 게임 구현
+
+        final Scanner scanner= new Scanner(System.in);
+        new game(scanner).initialize();
     }
 }
