@@ -3,9 +3,9 @@ package utils;
 import racingcar.Car;
 
 public class DataUtils {
-    private static int numcar;
-    private static Car[] cararr;
-    private static int count;
+    private static int numcar;       //차의 수
+    private static Car[] cararr;     //차 이름 배열
+    private static int count;        //횟수
 
     public static int getNumcar() {
         return numcar;
