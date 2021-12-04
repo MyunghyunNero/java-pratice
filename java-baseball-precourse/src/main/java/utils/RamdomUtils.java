@@ -2,7 +2,7 @@ package utils;
 
 import java.util.Random;
 
-public class RandomUtils {
+class RandomUtils {
     private static final Random RANDOM = new Random();
 
     private RandomUtils() {

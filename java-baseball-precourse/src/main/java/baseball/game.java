@@ -23,7 +23,7 @@ public class game {
         getuserinput();
     }
     public void getuserinput(){
-        System.out.println("숫자를 입력하세요 : ");
+        System.out.println("input : ");
         try{
             String userinput=scanner.next();
             newmake.inputanswer(userinput);
@@ -37,7 +37,7 @@ public class game {
         result result=new result();
         result.countresult();
         if(result.checkresult()){
-            System.out.println("3개의 숫자를 모두 맞히셨습니다! 게임 종료");
+            System.out.println("complete");
             checkRestart();
         }
         else {
@@ -46,7 +46,7 @@ public class game {
         }
     }
     public void checkRestart(){
-        System.out.printf("게임을 새로 시작하려면 1, 종료하려면 2를 입력하세요 ");
+        System.out.printf("restart: 1,end :2");
         String restart= scanner.next();
         if(restart.equals("1"))
             initialize();
