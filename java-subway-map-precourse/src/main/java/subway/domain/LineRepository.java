@@ -19,4 +19,10 @@ public class LineRepository {
     public static boolean deleteLineByName(String name) {
         return lines.removeIf(line -> Objects.equals(line.getName(), name));
     }
+    public static void viewL(){
+        int len=lines().size();
+        for(int i=0;i<len;i++){
+            System.out.println("[INFO]"+lines().get(i));
+        }
+    }
 }
